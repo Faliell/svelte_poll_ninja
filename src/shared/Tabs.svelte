@@ -12,7 +12,7 @@
     <ul>
         {#each items as item}
             <li on:click={() => dispatch('tabChange', item)}>
-                <div class:active={item === activeItem}>{item}</div>
+                <div class:active={item === activeItem}>{ item }</div>
             </li>   
         {/each}
     </ul>
