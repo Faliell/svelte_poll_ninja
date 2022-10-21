@@ -20,11 +20,11 @@
 	{#if activeItem === "Current Polls"}
 		<p>Poll list component goes here</p>
 	{:else if activeItem === "Add New Poll"}
-		<p>New poll form component goes here</p>
+	<CreatePollForm/>
 	{/if}
 	
 </main>
-<CreatePollForm/>
+
 <Footer></Footer>
 
 <style>
