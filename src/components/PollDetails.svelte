@@ -26,7 +26,7 @@
   };
 
   //delete poll
-  const handleDelete = () => {
+  const handleDelete = (id) => {
     PollStore.update(currentPolls => {
         return currentPolls.filter(poll => poll.id != id);
     })
