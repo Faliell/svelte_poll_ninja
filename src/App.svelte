@@ -16,7 +16,16 @@
     activeItem = "Current Polls";
   };
 
+  import { tweened } from "svelte/motion";
+  import Button from "./shared/Button.svelte";
+
+  const value = tweened(0);
+
+  
+
 </script>
+
+<button on:click={()=> value.set(1)}>{$value}</button>
 
 <Header />
 <main>
